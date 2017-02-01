@@ -262,6 +262,13 @@ ul.why-me li{
 	text-align: center;
 }
 
+.contact-left { width:50%; float:left;}
+.contact-left ul { text-align:left;}
+.contact-left .media-heading {text-align:left;}
+.contact-right { width:50%; float:right;}
+.contact-right .media-heading {color:#333;}
+.contact-right i { margin-right:10px;}
+
 form#contact {
 	padding: 5%;
 	background: #f1f1f1;
