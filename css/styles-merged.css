@@ -1994,7 +1994,7 @@ pre code {
 	.navbar-default .navbar-nav > li > a {font-size:10px; font-color:red;}
 }*/
 
-@media (min-width:840px) {
+@media (min-width:940px) {
     .container {
         width: 100%;
 		padding: 0 20px 0 20px;

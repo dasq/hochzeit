@@ -93,6 +93,13 @@ ul {
   color: #ffffff;
 }
 
+.wrapper {
+	max-width: 680px;
+	margin: 60px auto;
+	padding: 0 20px;
+}
+
+
 a {
     -webkit-transition: .3s all;
     transition: .3s all;
@@ -401,14 +408,14 @@ only screen and (min-resolution:2dppx) {
     text-transform: uppercase
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:940px) {
     .probootstrap-navbar .navbar-nav>li>a {
         font-size:12px;
 		margin-left: 8px;
 		margin-right: 8px;
 		padding: 62px 0px 46px 0px;
     }
-	.navbar .container {margin: 0 15px; padding-right:30px}
+	.navbar .container {margin: 0 15px; padding-right:10px}
 }
 
 @media screen and (max-width:768px) {
