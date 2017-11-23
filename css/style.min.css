@@ -148,6 +148,8 @@ a:hover {
     .probootstrap-hero h1 {
         font-size: 30px
     }
+	.probootstrap-heading .primary-heading{font-size:30px;}
+	.probootstrap-heading .secondary-heading{font-size:30px;}
 }
 
 .hero-text-subheading,
@@ -1946,7 +1948,7 @@ section[data-section=menu] {
 
 @media screen and (max-width:768px) {
     .probootstrap-heading .primary-heading {
-        font-size: 70px
+        font-size: 50px
     }
 }
 
@@ -1965,7 +1967,8 @@ section[data-section=menu] {
 
 @media screen and (max-width:768px) {
     .probootstrap-heading .secondary-heading {
-        font-size: 40px
+        font-size: 20px;
+		top: -40px;
     }
 }
 
