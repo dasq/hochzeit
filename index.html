@@ -18,6 +18,7 @@
 
 	  gtag('config', 'UA-109592380-1');
 	</script>
+	<script src="js/youtube.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
 
     <meta charset="utf-8">
@@ -57,9 +58,9 @@
             <li><a href="#" data-nav-section="discover">Wer bin ich</a></li>
 			<li><a href="#" data-nav-section="videos">Videos</a></li>
             <li><a href="#" data-nav-section="referenzen">Referenzen</a></li>
-            <li><a href="#" data-nav-section="live">Live</a></li>
+            <li><a href="#" data-nav-section="live">Erfahrung</a></li>
 			<li><a href="#" data-nav-section="kontakt">Buchen/Kontakt</a></li>
-			<li><a href="#" title="Coming Soon!"><img src="img/en.png" alt="English (en)" class="enflag"></a></li>
+			<!--<li><a href="#" title="Coming Soon!"><img src="img/en.png" alt="English (en)" class="enflag"></a></li>-->
           </ul>
 		  
         </div>
@@ -76,7 +77,8 @@
                 <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
                   <h1 class="primary-heading">Wilkommen</h1>
                   <h3 class="secondary-heading">Musikunterhalter für Ihre Fest</h3>
-                  <p class="sub-heading">Live Musik für ein einzigartiges Erlebnis</p>
+				  <p><a href="#jetztbuchen" class="btn-contact" alt="Jetzt Buchen">Jetzt Buchen</a></p>
+                  <!--<p class="sub-heading">Live Musik für ein einzigartiges Erlebnis</p>-->
                 </div>
               </div>
             </div>
@@ -102,8 +104,8 @@
               <div class="col-md-8 col-md-offset-2">
                 <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
                   <h1 class="primary-heading">Alleinunterhalter</h1>
-                  <h3 class="secondary-heading">Feiern Sie mit<br>einem One-Man-Band</h3>
-                  <p class="sub-heading">"Public Award" gewinner von <a href="http://www.sound-of-dresden.de" target="_blank">Sound of Dresden</a></p>
+                  <h3 class="secondary-heading">Feiern Sie mit einem One-Man-Band</h3>
+                  <p class="sub-heading">"Public Award" gewinner von <a href="#sod" alt="Weiter Lesen">Sound of Dresden</a></p>
                 </div>
               </div>
             </div>
@@ -112,17 +114,16 @@
       </ul>
     </section>
 
-    <section class="probootstrap-section probootstrap-bg-white" data-section="discover">
+    <section class="probootstrap-section probootstrap-bg-white flexrow" data-section="discover">
       <div class="container">
-        <div class="row">
-          <div class="col-md-5 text-center probootstrap-animate">
+        <div class="row flexrow">
+          <div class="col-md-5 text-center probootstrap-animate flex">
             <div class="probootstrap-heading dark">
-              <h1 class="primary-heading">Entdecken</h1>
-              <h3 class="secondary-heading">Der bin ich</h3>
+              <h1 class="primary-heading">Der bin ich</h1>
+              <h3 class="secondary-heading">Kennenlernen</h3>
               <span class="seperator">* * *</span>
             </div>
-            <p>Gewinner vom "Sound of Dresden" 2017 (Public Award), ich bin alleinunterhalter von Paris (Frankreich).
-			Ich habe die Liebe in Neuseeland entdeckt und wohne jetzt in Dresden (sie ist Dresdnerin).
+            <p>Gewinner vom "Sound of Dresden" 2017 (Public Award), ich bin professioneller Gitarrist von Paris (Frankreich) und wohne jetzt in Dresden (Sachsen).
 				<br>Mit 6 Jahren habe ich die Gitarre zu spielen angefangen und seit habe dieser Instrument lieb. 
 				Abgeschlusst in klassischer Gitarre und Jazz, ich habe die weite Welt bereistet und habe mich in der Musik gefunden.
 				<br>Seit diese Erfahrung, habe ich ein entscheidendes Ziel: Wenn ich mein ganzes Herz beim Spielen spiele, das ich immer herausfordere.
@@ -131,42 +132,9 @@
             <p><a href="http://www.hey-dresden.de/freizeit/konzerte/farid-ben-miles-konzertreview/" class="probootstrap-custom-link" target="_blank">Weiter Lesen (HeyDresden.de)</a></p>
           </div>
 		  
-          <div class="col-md-6 col-md-push-1 probootstrap-animate">
-			<div class="youtube-wrapper">
-				<!--<div class="youtube-player" data-id="aE78k1sTOSk"></div>
-				<script>
-					document.addEventListener("DOMContentLoaded",
-						function() {
-							var div, n,
-								v = document.getElementsByClassName("youtube-player");
-							for (n = 0; n < v.length; n++) {
-								div = document.createElement("div");
-								div.setAttribute("data-id", v[n].dataset.id);
-								div.innerHTML = labnolThumb(v[n].dataset.id);
-								div.onclick = labnolIframe;
-								v[n].appendChild(div);
-							}
-						});
-
-					function labnolThumb(id) {
-						var thumb = '<img src="img/yt-thumbnail-about.jpg">',
-							play = '<div class="play"></div>';
-						return thumb.replace("ID", id) + play;
-					}
-
-					function labnolIframe() {
-						var iframe = document.createElement("iframe");
-						var embed = "https://www.youtube.com/embed/ID?autoplay=1";
-						iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
-						iframe.setAttribute("frameborder", "0");
-						iframe.setAttribute("allowfullscreen", "1");
-						this.parentNode.replaceChild(iframe, this);
-					}
-
-				</script>
-			</div>-->
-            <p><img src="img/faridbenmiles-about.jpg" alt="Farid Ben Miles" class="img-responsive"></p>
-          </div>
+          <div class="col-test probootstrap-animate flex">
+		  <!--<div class="col-test">-->
+			<div class="youtube-player" data-id="aE78k1sTOSk"></div>
         </div>
         <!-- END row -->
       </div>
@@ -177,8 +145,8 @@
         <div class="row">
           <div class="col-md-12 text-center probootstrap-animate">
             <div class="probootstrap-heading">
-              <h2 class="primary-heading">Ansehen</h2>
-              <h3 class="secondary-heading">Meine Videos</h3>
+              <h1 class="primary-heading">Meine Videos</h1>
+              <h3 class="secondary-heading">Ansehen</h3>
             </div>
           </div>
         </div>
@@ -195,15 +163,15 @@
               <li>
                 <figure class="image"><a href="http://www.youtube.com/watch?v=aE78k1sTOSk" title="Farid Ben Miles - Tree Song" target="_blank"><img src="img/fbm-treesong.jpg" alt="Farid Ben Miles - Tree Song" class="imgdl"></a></figure>
                 <div class="text">
-                  <span class="price"><a href="http://www.youtube.com/watch?v=aE78k1sTOSk" target="_blank">Ansehen</a></span>
+                  <span class="price"><a href="http://www.youtube.com/watch?v=aE78k1sTOSk" class="video-link" target="_blank">Ansehen</a></span>
                   <h3>"Tree Song" - Farid Ben Miles</h3>
-                  <p>Live beim Palais Sommer Festival</p>
+                  <p class="video_details">Live beim Palais Sommer Festival</p>
                 </div>
               </li>
               <li>
                 <figure class="image"><a href="http://www.youtube.com/watch?v=Rv3SRhQrX5c" title="Farid Ben Miles - Tradivan" target="_blank"><img src="img/fbm-tradivan.jpg" alt="Farid Ben Miles - Tradivan" class="imgdl"></a></figure>
                 <div class="text">
-                  <span class="price"><a href="http://www.youtube.com/watch?v=Rv3SRhQrX5c" target="_blank">Ansehen</a></span>
+                  <span class="price"><a href="http://www.youtube.com/watch?v=Rv3SRhQrX5c" class="video-link" target="_blank">Ansehen</a></span>
                   <h3>"Tradivan" (Caravan/Misirlou)</h3>
                   <p>Live in the Attic - Extrakt 1</p>
                 </div>
@@ -211,7 +179,7 @@
               <li>
                 <figure class="image"><a href="http://www.youtube.com/watch?v=SbUtBtzo9Qg" title="Farid Ben Miles - Going Overseas" target="_blank"><img src="img/fbm-goingoverseas.jpg" alt="Farid Ben Miles - Going Overseas" class="imgdl"></a></figure>
                 <div class="text">
-                  <span class="price"><a href="http://www.youtube.com/watch?v=SbUtBtzo9Qg" target="_blank">Ansehen</a></span>
+                  <span class="price"><a href="http://www.youtube.com/watch?v=SbUtBtzo9Qg" class="video-link" target="_blank">Ansehen</a></span>
                   <h3>"Going Overseas"</h3>
                   <p>Live in the Attic - Extrakt 2</p>
                 </div>
@@ -224,15 +192,15 @@
               <li>
                 <figure class="image"><a href="http://www.youtube.com/watch?v=_30K8Bei_iI" title="Farid Ben Miles - Traditions" target="_blank"><img src="img/fbm-traditions.jpg" alt="Farid Ben Miles - Traditions" class="imgdl"></a></figure>
                 <div class="text">
-                  <span class="price"><a href="http://www.youtube.com/watch?v=_30K8Bei_iI" target="_blank">Ansehen</a></span>
+                  <span class="price"><a href="http://www.youtube.com/watch?v=_30K8Bei_iI" class="video-link" target="_blank">Ansehen</a></span>
                   <h3>"Traditions"</h3>
-                  <p>Erste Video von meiner erster CD "Going Overseas".</p>
+                  <p class="video_details">Erste Video von meiner erster CD "Going Overseas".</p>
                 </div>
               </li>
               <li>
                 <figure class="image"><a href="http://www.youtube.com/watch?v=xocDtcfhR6w" title="Farid Ben Miles - Ocean" target="_blank"><img src="img/fbm-ocean.jpg" alt="Farid Ben Miles - Ocean" class="imgdl"></a></figure>
                 <div class="text">
-                  <span class="price"><a href="http://www.youtube.com/watch?v=xocDtcfhR6w" target="_blank">Ansehen</a></span>
+                  <span class="price"><a href="http://www.youtube.com/watch?v=xocDtcfhR6w" class="video-link" target="_blank">Ansehen</a></span>
                   <h3>One Shot Sessions #1</h3>
                   <p>"Ocean" // Cover von John Butler.</p>
                 </div>
@@ -240,9 +208,9 @@
               <li>
                 <figure class="image"><a href="http://www.youtube.com/watch?v=Npq5tuo5938" title="Farid Ben Miles - To Build a Home" target="_blank"><img src="img/fbm-tobuildahome.jpg" alt="Farid Ben Miles - To Build a Home" class="imgdl"></a></figure>
                 <div class="text">
-                  <span class="price"><a href="http://www.youtube.com/watch?v=Npq5tuo5938" target="_blank">Ansehen</a></span>
+                  <span class="price"><a href="http://www.youtube.com/watch?v=Npq5tuo5938" class="video-link" target="_blank">Ansehen</a></span>
                   <h3>One Shot Sessions #3</h3>
-                  <p>"To Build a Home" // Instrumental cover von The Cinematic Orchestra.</p>
+                  <p class="video_details">"To Build a Home" // Instrumental cover von The Cinematic Orchestra.</p>
                 </div>
               </li>
             </ul>
@@ -256,8 +224,8 @@
         <div class="row">
           <div class="col-md-12 text-center probootstrap-animate">
             <div class="probootstrap-heading">
-              <h2 class="primary-heading">Lesen</h2>
-              <h3 class="secondary-heading">Meine Referenzen</h3>
+              <h1 class="primary-heading">Meine Referenzen</h1>
+              <h3 class="secondary-heading">Lesen</h3>
             </div>
           </div>
         </div>
@@ -293,7 +261,7 @@
 					</div>
 				</div>
 					
-				<div class="col-md-4 col-sm-4 probootstrap-animate">
+				<div class="col-md-4 col-sm-4 probootstrap-animate" id="sod">
 					<div class="probootstrap-block-image">
 					  <figure><a href="http://www.dresdner.nu/reviews/Aus-persoenlicher-Sicht-Ein-Kommentar-zum-Finale-des-sound-of-dresden.58DFFC66.478F.html.php" class="link-sm" title="Press // Sound of Dresden" target="_blank"><img src="img/press-soundofdresden.jpg" alt="Press // Sound of Dresden" class="imgdl"></a></figure>
 					  <div class="text">
@@ -360,8 +328,8 @@
         <div class="row">
           <div class="col-md-12 text-center probootstrap-animate">
             <div class="probootstrap-heading">
-              <h2 class="primary-heading">Live</h2>
-              <h3 class="secondary-heading">Performances</h3>
+              <h1 class="primary-heading">Meine Erfahrungen</h1>
+              <h3 class="secondary-heading">Entdecken</h3>
             </div>
           </div>
         </div>
@@ -372,7 +340,7 @@
         <div class="row">
           <div class="col-md-5 text-center probootstrap-animate col-fbm col-sm-4">
             <div class="probootstrap-heading dark">
-              <h1 class="primary-heading">Live</h1>
+              <h2 class="primary-heading">Live</h2>
               <h3 class="secondary-heading">Konzerte</h3>
             </div>
             <p><h3>Professionalität</h3>
@@ -452,7 +420,7 @@
       </div>
     </section>
 
-    <section class="probootstrap-footer" data-section="kontakt">
+    <section class="probootstrap-footer" data-section="kontakt" id="jetztbuchen">
       <div class="container">
         <div class="row contactsection">
           <div class="col-md-6 probootstrap-animate">
