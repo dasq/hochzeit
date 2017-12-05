@@ -63,11 +63,11 @@ h6 {
     font-size: 14px
 }
 
-ol,
+/*ol,
 p,
 ul {
     margin-bottom: 30px
-}
+}*/
 
 .youtube-player {
     position: relative;
@@ -1162,7 +1162,7 @@ section[data-section=menu] {
     margin: 0
 }
 
-.menus h2 {text-align:center;}
+/*.menus h2 {text-align:center;}*/
 
 .menus li {
     padding: 0;
@@ -1181,13 +1181,13 @@ section[data-section=menu] {
 }
 
 .menus li .image {
-    width: 80px;
+    width: 160px;
 	
 }
 
 .menus li .image img {
     max-width: 100%;
-    border-radius: 10%;
+    border-radius: 3%;
 	margin: 20px 0px;
 }
 
@@ -1203,9 +1203,9 @@ section[data-section=menu] {
 }
 
 .menus li .text .price {
-    position: absolute;
+   /* position: absolute;
     top: 15px;
-    right: 0;
+    right: 0;*/
     font-size: 20px;
     color: #FFA33E
 }
@@ -1748,9 +1748,9 @@ section[data-section=menu] {
 .performances h3 {margin-bottom: 20px;}
 .performances ul {margin-bottom:10px; padding-left:0px;}
 
-.socials{
+/*.socials{
 	text-align:center;
-}
+}*/
 .socials h3{text-transform: uppercase;}
 .probootstrap-contact-info {
     padding: 0;
