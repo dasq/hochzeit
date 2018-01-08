@@ -2608,7 +2608,7 @@ section[data-section=menu] {
         height: 370px;
     }
 	.flexslider .probootstrap-slider-text {
-		margin-top: 200px;
+		margin-top: 180px;
 	}
 }
 
@@ -2665,7 +2665,7 @@ section[data-section=menu] {
 	}
 	.btn-contact {
 		padding: 5px 10px 5px 10px;
-		font-size: 14px;
+		font-size: 12px;
 		}
 	.probootstrap-slider-text{
 		line-height: 14px;
