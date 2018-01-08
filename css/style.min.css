@@ -152,7 +152,7 @@ ul {
 .contactdetails {color: #fff;}
 .contactemail {color: #fff}
 
-.btn-wrapper{margin-top:30px;}
+.btn-wrapper{margin-top:30px; text-align:center;}
 .btn-contact {
   -webkit-border-radius: 4;
   -moz-border-radius: 4;
@@ -2510,9 +2510,23 @@ section[data-section=menu] {
     padding-bottom: 0!important
 }
 
-.dasbinich div {width:100%;height:auto}
+.title {width: 50%; padding-right: 15px; padding-left: 15px;}
+
+.dasbinich {width:45%;}
+.dasbinich  img{width:100%;height:auto;}
+
+.toalign {float : left ; padding-right: 15px; padding-left: 15px;}
+
+@media screen and (max-width:768px) {
+	.title {width: 100%}
+	.toalign {clear: float;}
+	.dasbinich {width:100%;}
+}
+
+
+/*.dasbinich div {width:45%;height:auto; float:right;}
 .dasbinich figure{height:100%;}
-.dasbinich  img{width:100%;height:auto; margin-top:50%;}
+.dasbinich  img{width:100%;height:auto; margin-top:50%;}*/
 
 @media screen and (max-width:768px) {
     .owl-theme .owl-controls .owl-nav {
@@ -2681,3 +2695,40 @@ section[data-section=menu] {
     font-size: 11px;
 	}
 }
+
+@media screen and (max-width:768px) {
+	.solist-row .text{text-align:center;}
+	.solist-row h3 {text-align:center;}
+}
+
+@media screen and (max-width:992px) {
+	#jetztansehen .row {
+		margin-left: 20%;
+	}
+	#jetztansehen h2 {text-align:center}
+}
+
+@media screen and (max-width:700px) {
+	#jetztansehen .row {
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width:550px) {
+	#jetztansehen .row {
+		margin-left: 0;
+	}
+	#jetztansehen h2 {text-align:left}
+}
+
+@media screen and (max-width:450px) {
+	.menus li .image img {
+		min-width: 50%;
+		width: 100px; height:auto;
+	}
+	#jetztansehen .image {width: 100px; height:auto;}
+	#jetztansehen .text {padding-left: 5px;}
+	#jetztansehen .text h3 {line-height: 1;}
+	#jetztansehen .video_details {line-height: 1.1;}
+}
+
