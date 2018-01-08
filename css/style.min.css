@@ -13,7 +13,13 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Open Sans", Arial, sans-serif
+    font-family: 'Barlow', "Open Sans", Arial, sans-serif
+}
+
+@font-face {
+    font-family: barlow;
+    src: url("https://fonts.google.com/specimen/Barlow+Semi+Condensed");
+    font-style: normal
 }
 
 @font-face {
@@ -136,6 +142,8 @@ ul {
 }
 
 
+.sign_end{text-align:right;clear:both;}
+
 .signature {color: #000; display:inline-block;
     border-bottom:3px solid black;
     padding-bottom:2px;}
@@ -144,6 +152,7 @@ ul {
 .contactdetails {color: #fff;}
 .contactemail {color: #fff}
 
+.btn-wrapper{margin-top:30px;}
 .btn-contact {
   -webkit-border-radius: 4;
   -moz-border-radius: 4;
@@ -152,10 +161,11 @@ ul {
   background: #ff9725;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  font-size:16px;
 }
 
 .btn-contact:hover {
-  font-size:16px;
+  font-size:17px;
   text-decoration: none;
   color: #ffffff;
 }
@@ -878,9 +888,11 @@ section[data-section=menu] {
 
 .probootstrap-footer {
     background: #000;
-    padding: 7em 0;
+    padding: 4em 0 2em 0;
     color: rgba(255, 255, 255, .7)
 }
+
+.kontakt_marg{margin-bottom:30px;}
 
 .probootstrap-footer h3 {
     font-size: 18px;
@@ -1186,9 +1198,9 @@ section[data-section=menu] {
 }
 
 .menus li .image img {
-    max-width: 100%;
+    min-width: 100%;
     border-radius: 3%;
-	margin: 20px 0px;
+	margin: 0px 0px 20px 0px;
 }
 
 .menus li .text {
@@ -1196,7 +1208,7 @@ section[data-section=menu] {
 }
 
 .menus li .text h3 {
-    margin: 15px 0 0;
+    margin: 0 0 10px 0;
     font-size: 18px;
     text-transform: uppercase;
     color: #000
@@ -1212,7 +1224,7 @@ section[data-section=menu] {
 
 @media screen and (max-width:768px) {
     .probootstrap-footer-social.right {
-        text-align: left
+        text-align: center
     }
     .menus li .text h3 {
         margin-top: 0
@@ -1223,6 +1235,15 @@ section[data-section=menu] {
         display: block;
         margin-bottom: 0
     }
+}
+
+@media screen and (max-width:580px) {
+    .menus li .text h3 {font-size: 15px;}
+	.video_details {font-size: 12px;}
+}
+@media screen and (max-width:480px) {
+    .menus li .text h3 {font-size: 13px;}
+	.video_details {font-size: 11px;}
 }
 
 .probootstrap-cell-retro {
@@ -2047,15 +2068,16 @@ section[data-section=menu] {
 .flexslider,
 .flexslider .slides>li,
 .slider-height {
-    height: 750px
+    height: 750px;
 }
+
 
 .probootstrap-heading .primary-heading {
     font-family: "Pinyon Script", serif;
     color: #FFA33E;
     margin: 0;
     padding: 0;
-    font-size: 80px
+    font-size: 60px
 }
 
 @media screen and (max-width:768px) {
@@ -2070,13 +2092,14 @@ section[data-section=menu] {
     margin: 0;
     padding: 0;
     letter-spacing: .05em;
-    font-size: 50px;
+    font-size: 35px;
     position: relative;
-    top: -50px;
+    top: -45px;
     font-weight: 700;
     line-height: 40px
 }
 
+	
 @media screen and (max-width:768px) {
     .probootstrap-heading .secondary-heading {
         font-size: 20px;
@@ -2120,13 +2143,13 @@ section[data-section=menu] {
     }
 }
 
-.flexslider .probootstrap-slider-text .sub-heading {
+.sub-heading {
     font-size: 20px;
-    margin-top: -40px;
-    color: rgba(255, 255, 255, .7)
+    margin-top: -30px;
+    color: rgba(255, 255, 255, .9);
 }
 
-.flexslider .probootstrap-slider-text .sub-heading a {
+.sub-heading a {
     color: #fff
 }
 
@@ -2487,6 +2510,10 @@ section[data-section=menu] {
     padding-bottom: 0!important
 }
 
+.dasbinich div {width:100%;height:auto}
+.dasbinich figure{height:100%;}
+.dasbinich  img{width:100%;height:auto; margin-top:50%;}
+
 @media screen and (max-width:768px) {
     .owl-theme .owl-controls .owl-nav {
         display: none
@@ -2495,4 +2522,162 @@ section[data-section=menu] {
     .img-xs-responsive {
         max-width: 100%
     }
+	.dasbinich  img{margin-top:20px;}
+}
+
+#slide4{background-image: url("../img/farid_wilkommen.jpg");  background-repeat: no-repeat; background-size:100% auto;}
+#slide1{background-image: url("../img/privat_konzert.jpg");  background-repeat: no-repeat; background-size: 100% auto;}
+#slide2{background-image: url("../img/hochzeit_ss.jpg");  background-repeat: no-repeat; background-size: 100% auto;}
+#slide3{background-image: url("../img/faridbenmiles-bw.jpg");  background-repeat: no-repeat; background-size: 100% auto;}
+
+.solist-row{clear:both;}
+.solist-row figure {text-align:center}
+.solist-row h3{text-align:left}
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
+
+@media screen and (max-width:768px) {
+	.ref figure {width:40%;float:left; margin:10px}
+}
+
+@media screen and (max-width:580px) {
+	.probootstrap-block-image .text h3 {font-size:14px;}
+	.probootstrap-block-image .text .date {font-size:10px;}
+	.probootstrap-block-image .text {padding: 5px;}
+	.probootstrap-block-image .text p {font-size:11px;}
+	.flexrow p {font-size:12px}
+	.flexrow .probootstrap-custom-link {font-size:13px}
+	.erfahrungrow p {font-size:11px}
+	.erfahrungrow h3 {font-size:14px}
+	.erfahrungrow li {font-size:11px}
+	.contactsection h3 {font-size:14px}
+	.contactsection .row {font-size:12px}
+	.probootstrap-copyright p {font-size:12px}
+	.copyright-text {text-align:center}
+}
+
+@media screen and (max-width:992px) {
+	.flexslider,
+    .flexslider .slides>li,
+    .slider-height {
+        height: 500px;
+    }
+	.flexslider .probootstrap-slider-text {
+    margin-top: 250px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.flexslider,
+    .flexslider .slides>li,
+    .slider-height {
+        height: 370px;
+    }
+	.flexslider .probootstrap-slider-text {
+		margin-top: 200px;
+	}
+}
+
+@media screen and (max-width:620px) {
+	.flexslider,
+    .flexslider .slides>li,
+    .slider-height {
+        height: 350px;
+    }
+	.flexslider .probootstrap-slider-text {
+    margin-top: 150px;
+	}
+	.probootstrap-heading .primary-heading {
+    font-size: 40px;
+	}
+	.sub-heading {
+    font-size: 16px;
+	margin-top: -20px;
+	}
+}
+@media screen and (max-width:550px) {
+	.flexslider,
+    .flexslider .slides>li,
+    .slider-height {
+        height: 290px;
+    }
+	.flexslider .probootstrap-slider-text {
+    margin-top: 100px;
+	}
+	.probootstrap-heading .primary-heading {
+    font-size: 35px;
+	}
+	.sub-heading {
+    font-size: 15px;
+	}
+}
+@media screen and (max-width:450px) {
+	.flexslider,
+    .flexslider .slides>li,
+    .slider-height {
+        height: 200px;
+    }
+	.flexslider .probootstrap-slider-text {
+    margin-top: 70px;
+	}
+	.probootstrap-heading .primary-heading {
+    font-size: 26px;
+	}
+	.sub-heading {
+    font-size: 12px;
+	}
+	.btn-wrapper {
+		margin-top: 10px;
+	}
+	.btn-contact {
+		padding: 5px 10px 5px 10px;
+		font-size: 14px;
+		}
+	.probootstrap-slider-text{
+		line-height: 14px;
+	}
+}
+
+@media screen and (max-width:320px) {
+	#slide1, #slide2, #slide3, #slide4 { background-size: auto 100% ;}
+	.probootstrap-heading .primary-heading {
+    font-size: 24px;
+	}
+	.sub-heading {
+    font-size: 11px;
+	}
 }

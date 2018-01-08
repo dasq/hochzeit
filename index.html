@@ -28,13 +28,20 @@
     <meta name="keywords" content="alleinunterhalter, fest, hochzeit, live, gitarrenmusik, instrumentalmusik, feiern, hochzeitsband, sachsen, dresden, chemnitz, leipzig, erzgebirge, bautzen, görlitz, zwickau, musikaufführung">
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pinyon+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet"> 
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
+	
+	<link rel="stylesheet" href="css/grt-youtube-popup.css">
+
+	
 
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
+	
+	
   </head>
   <body>
     
@@ -54,12 +61,12 @@
 
         <div id="navbar-collapse" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#" data-nav-section="welcome">Wilkommen</a></li>
-            <li><a href="#" data-nav-section="discover">Wer bin ich</a></li>
-			<li><a href="#" data-nav-section="videos">Videos</a></li>
-            <li><a href="#" data-nav-section="referenzen">Referenzen</a></li>
-            <li><a href="#" data-nav-section="live">Erfahrung</a></li>
-			<li><a href="#" data-nav-section="kontakt">Buchen/Kontakt</a></li>
+            <li class="active"><a href="#" data-nav-section="welcome" title="Wilkommen">Wilkommen</a></li>
+            <li><a href="#" data-nav-section="solist" title="Live-Solist für Ihr Fest">Live-Solist</a></li>
+			<li><a href="#" data-nav-section="musik" title="Videos Ansehen">Musik</a></li>
+            <li><a href="#" data-nav-section="referenzen" title="Referenzen Lesen">Referenzen</a></li>
+            <li><a href="#" data-nav-section="musiker" title="">Das bin ich</a></li>
+			<li><a href="#" data-nav-section="kontakt" title="">Buchen/Kontakt</a></li>
 			<!--<li><a href="#" title="Coming Soon!"><img src="img/en.png" alt="English (en)" class="enflag"></a></li>-->
           </ul>
 		  
@@ -70,42 +77,56 @@
 
     <section class="flexslider" data-section="welcome">
       <ul class="slides">
-        <li style="background-image: url(img/privat_konzert2.jpg)" class="overlay" data-stellar-background-ratio="0.5">
+		<li class="overlay" id="slide4" data-stellar-background-ratio="0.5">
           <div class="container">
             <div class="row">
-              <div class="col-md-8 col-md-offset-2">
+              <div class="col-md-8 col-md-offset-2">	
                 <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
-                  <h1 class="primary-heading">Wilkommen</h1>
-                  <h3 class="secondary-heading">Musikunterhalter für Ihre Fest</h3>
-				  <p><a href="#jetztbuchen" class="btn-contact" alt="Jetzt Buchen">Jetzt Buchen</a></p>
-                  <!--<p class="sub-heading">Live Musik für ein einzigartiges Erlebnis</p>-->
+                  <h1 class="primary-heading">Live-Solist für Ihr Event</h1>
+                  <!--<h3 class="secondary-heading">Feiern Sie mit einem One-Man-Band</h3>-->
+                  <p class="sub-heading">Beste Musik für Ihr Fest.</a></p>		  
+				  <p class="btn-wrapper"><a href="#jetztbuchen" class="btn-contact youtube-link" youtubeid="aE78k1sTOSk" alt="Live Ansehen">Live Ansehen</a></p>		  
                 </div>
               </div>
             </div>
           </div>
         </li>
-        <li style="background-image: url(img/hochzeit_ss.jpg)" class="overlay">
+        <li class="overlay" id="slide1" data-stellar-background-ratio="0.5">
           <div class="container">
             <div class="row">
               <div class="col-md-8 col-md-offset-2">
                 <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
-                  <h1 class="primary-heading">Musikaufführung</h1>
-                  <h3 class="secondary-heading">Hochzeit & Trauung</h3>
-                  <p class="sub-heading">Ihre Lied für Ihnen arrangiert, gespielt und aufgenommen.</p>
+                  <h1 class="primary-heading">Events & besondere Anlässe</h1>
+                  <!--<h3 class="secondary-heading">Musikunterhalter für Ihre Fest</h3>-->
+				  <p class="sub-heading">Ein musikalisches Geschenk für Sie und Ihre Gäste.</p>
+				  <p class="btn-wrapper"><a href="#jetztbuchen" class="btn-contact" alt="Jetzt Anfragen">Jetzt anfragen</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="overlay" id="slide2" data-stellar-background-ratio="0.5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
+                  <h1 class="primary-heading">Hochzeit & Trauung</h1>
+                  <!--<h3 class="secondary-heading">Hochzeit & Trauung</h3>-->
+                  <p class="sub-heading">Musik mit viel Gefühl, Erfahrung und Stil.</p>
                 </div>
               </div>
             </div>
           </div>
           
         </li>
-        <li style="background-image: url(img/faridbenmiles-bw.jpg)" class="overlay">
+        <li class="overlay" id="slide3" data-stellar-background-ratio="0.5">
           <div class="container">
             <div class="row">
               <div class="col-md-8 col-md-offset-2">
                 <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
-                  <h1 class="primary-heading">Alleinunterhalter</h1>
-                  <h3 class="secondary-heading">Feiern Sie mit einem One-Man-Band</h3>
-                  <p class="sub-heading">"Public Award" gewinner von <a href="#sod" alt="Weiter Lesen">Sound of Dresden</a></p>
+                  <h1 class="primary-heading">Geburtstag & Jubiläum</h1>
+                  <!--<h3 class="secondary-heading">Feiern Sie mit einem One-Man-Band</h3>-->
+                  <p class="sub-heading">Unvergessliche Momente für Ihre Party.</a></p>
                 </div>
               </div>
             </div>
@@ -114,39 +135,138 @@
       </ul>
     </section>
 
-    <section class="probootstrap-section probootstrap-bg-white flexrow" data-section="discover">
+    <section class="probootstrap-section probootstrap-bg-white flexrow" data-section="solist">
       <div class="container">
         <div class="row flexrow">
           <div class="col-md-5 probootstrap-animate flex">
-            <div class="probootstrap-heading dark">
-              <h1 class="primary-heading">Der bin ich</h1>
-              <h3 class="secondary-heading">Kennenlernen</h3>
-              <!--<span class="seperator">* * *</span>-->
-            </div>
-            <p>Gewinner vom "Sound of Dresden" 2017 (Public Award), ich bin professioneller Gitarrist von Paris (Frankreich) und wohne jetzt in Dresden (Sachsen).
-				<br>Mit 6 Jahren habe ich die Gitarre zu spielen angefangen und seit habe dieser Instrument lieb. 
-				Abgeschlusst in klassischer Gitarre und Jazz, ich habe die weite Welt bereistet und habe mich in der Musik gefunden.
-				<br>Seit diese Erfahrung, habe ich ein entscheidendes Ziel: Wenn ich mein ganzes Herz beim Spielen spiele, das ich immer herausfordere.
+            <!--<div class="probootstrap-heading dark">
+              <h1 class="primary-heading">Live-Solist</h1>
+              <h3 class="secondary-heading">Akustik und<br>instrumental</h3>
+              <span class="seperator">* * *</span>
+            </div>-->
+			<div class="solist-row">
 				
-				</p>
-            <p><a href="http://www.hey-dresden.de/freizeit/konzerte/farid-ben-miles-konzertreview/" class="probootstrap-custom-link" target="_blank">Weiter Lesen (HeyDresden.de)</a></p>
-          </div>
+				
+				<div class="col-md-4 col-sm-4 probootstrap-animate">
+					<div class="probootstrap-block-image">
+					  <figure><img src="img/ico_pro.png"></img></figure>
+					  <div class="text">
+						<h3>Professionalität (Was für Events)</h3>
+						<div>
+							<input type="checkbox" class="read-more-state" id="post-1" />
+							<p class="read-more-wrap">
+								<p>20 Jahre Erfahrung...</p>
+								<p class="read-more-target">Als stolzer Gewinner des „Sound of Dresden“ Award, lade ich Sie gern ein, mir auf meiner
+								akustischen Reise durch Asien, Nord Afrika oder in das Abendland zu folgen. Mit dem
+								instrumentalem Spiel auf meiner Gitarre führe ich Sie in eine fantastische Welt voller Magie
+								und Träume. Mit meinen mehr als 20 Jahren Erfahrung als Profimusiker, spielte ich bereits auf
+								vielen Veranstaltungen, Festivals, Hochzeiten oder Geburtstagen und verleihe auch Ihrem Fest
+								die besondere Note.</p>
+							</p>
+							<label for="post-1" class="read-more-trigger"></label>
+						</div>
+						
+					  </div>
+					  
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 probootstrap-animate">
+					<div class="probootstrap-block-image">
+					  <figure><img src="img/ico_flamenco.png"></img></figure>
+					  <div class="text">
+						<h3>Virtuosität (Was für Musik)</h3>
+						<div>
+							<input type="checkbox" class="read-more-state" id="post-2" />
+							<p class="read-more-wrap">
+								<p>Die beste in der Welt...</p>
+								<p class="read-more-target">Auf meiner akustischen Gitarre spiele ich bekannte Melodien aus Lounge, Kinematik und
+									Fingerstyle. Es erklingen Melodien aus Filmmusik, Klassik und aktuellen Hits. Mit mir erleben
+									Sie eine stilvolle Gestaltung von Dinner-und Galaabenden, Eröffnungen, Bällen, Empfängen,
+									Verleihungen, Soirees und vielem mehr.</p>
+								</p>
+							<label for="post-2" class="read-more-trigger"></label>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 probootstrap-animate">
+					<div class="probootstrap-block-image">
+					  <figure><img src="img/ico_bank.png"></img></figure>
+					  <div class="text">
+						<h3>(Was für Preis)</h3>
+						<div>
+							<input type="checkbox" class="read-more-state" id="post-3" />
+							<p class="read-more-wrap">
+							<p>Ein Band aber nur ein Man!</p>
+							<p class="read-more-target">Kann Bass, Drum, und Melody zusammen spielen (blablabla...)</p>
+								</p>
+							<label for="post-3" class="read-more-trigger"></label>
+						</div>
+					  </div>
+					</div>
+				</div>
 		  
-          <div class="col-test probootstrap-animate flex">
-		  <!--<div class="col-test">-->
-			<div class="youtube-player" data-id="aE78k1sTOSk"></div>
-        </div>
-        <!-- END row -->
+			</div>
+			
+			<!--<div id="weiter" class="solist-row">
+				<div class="col-md-4 col-sm-4 probootstrap-animate">
+					<div class="probootstrap-block-image">
+					  <div class="text">
+						<div><p>Als stolzer Gewinner des „Sound of Dresden“ Award, lade ich Sie gern ein, mir auf meiner
+						akustischen Reise durch Asien, Nord Afrika oder in das Abendland zu folgen. Mit dem
+						instrumentalem Spiel auf meiner Gitarre führe ich Sie in eine fantastische Welt voller Magie
+						und Träume. Mit meinen mehr als 20 Jahren Erfahrung als Profimusiker, spielte ich bereits auf
+						vielen Veranstaltungen, Festivals, Hochzeiten oder Geburtstagen und verleihe auch Ihrem Fest
+						die besondere Note.</p></div> 
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 probootstrap-animate">
+					<div class="probootstrap-block-image">
+						<div class="text">
+							<div><p>Auf meiner akustischen Gitarre spiele ich bekannte Melodien aus Lounge, Kinematik und
+							Fingerstyle. Es erklingen Melodien aus Filmmusik, Klassik und aktuellen Hits. Mit mir erleben
+							Sie eine stilvolle Gestaltung von Dinner-und Galaabenden, Eröffnungen, Bällen, Empfängen,
+							Verleihungen, Soirees und vielem mehr.</p></div> 
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 probootstrap-animate">
+					<div class="probootstrap-block-image">
+						<div class="text">
+							<div><p>Blablabla.</p></div> 
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="solist-row">
+				<div class="col-md-4 col-sm-4 probootstrap-animate">
+					<div class="probootstrap-block-image">
+					  <div><button onclick="myWeiter()">Weiterlesen</button></div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 probootstrap-animate">
+					<div><button onclick="myWeiter()">Weiterlesen</button></div>
+				</div>
+				<div class="col-md-4 col-sm-4 probootstrap-animate">
+					<div><button onclick="myWeiter()">Weiterlesen</button></div>
+				</div>
+			</div>-->
+		  </div>
+	<!--<div class="anfragen-wrapper"><p class="btn-wrapper"><a href="#jetztbuchen" class="btn-contact" alt="Jetzt Anfragen">Jetzt anfragen</a></p></div>-->
+			
+		</div>
       </div>
     </section>
 
-    <section class="probootstrap-section-bg overlay" style="background-image: url(img/fbm-video-bg.jpg);" data-stellar-background-ratio="0.5" data-section="videos">
+    <section class="probootstrap-section-bg overlay" style="background-image: url(img/fbm-video-bg.jpg);" data-stellar-background-ratio="0.5" data-section="musik">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center probootstrap-animate">
             <div class="probootstrap-heading">
-              <h1 class="primary-heading">Meine Videos</h1>
-              <h3 class="secondary-heading">Ansehen</h3>
+              <h1 class="primary-heading">Hörproben & Videos</h1>
+              <!--<h3 class="secondary-heading">Ansehen</h3>-->
+			  <p class="sub-heading"><a href="#jetztansehen">Jetzt ansehen.</a></p>
             </div>
           </div>
         </div>
@@ -154,59 +274,34 @@
     </section>
      <!-- probootstrap-bg-white -->
     
-    <section class="probootstrap-section probootstrap-bg-white">
+    <section class="probootstrap-section probootstrap-bg-white" id="jetztansehen">
 		<div class="container">
         <div class="row">
           <div class="col-md-6">
             <ul class="menus">
-				<h2>Live Videos</h2>
-				*** Isou *** Display 1st Option
-              <!--<li>
-                <figure class="image"><a href="http://www.youtube.com/watch?v=aE78k1sTOSk" title="Farid Ben Miles - Tree Song" target="_blank"><img src="img/fbm-treesong.jpg" alt="Farid Ben Miles - Tree Song" class="imgdl"></a></figure>
-                <div class="text">
-                  <h3>"Tree Song" - Farid Ben Miles</h3>
-                  <p class="video_details">Live beim Palais Sommer Festival</p>
-				  <span class="price"><a href="http://www.youtube.com/watch?v=aE78k1sTOSk" class="video-link" target="_blank">Ansehen</a></span>
-                </div>
-              </li>
-              <li>
-                <figure class="image"><a href="http://www.youtube.com/watch?v=Rv3SRhQrX5c" title="Farid Ben Miles - Tradivan" target="_blank"><img src="img/fbm-tradivan.jpg" alt="Farid Ben Miles - Tradivan" class="imgdl"></a></figure>
-                <div class="text">
-                  <h3>"Tradivan" (Caravan/Misirlou)</h3>
-                  <p>Live in the Attic - Extrakt 1</p>
-				  <span class="price"><a href="http://www.youtube.com/watch?v=Rv3SRhQrX5c" class="video-link" target="_blank">Ansehen</a></span>
-                </div>
-              </li>
-              <li>
-                <figure class="image"><a href="http://www.youtube.com/watch?v=SbUtBtzo9Qg" title="Farid Ben Miles - Going Overseas" target="_blank"><img src="img/fbm-goingoverseas.jpg" alt="Farid Ben Miles - Going Overseas" class="imgdl"></a></figure>
-                <div class="text">
-                  <h3>"Going Overseas"</h3>
-                  <p>Live in the Attic - Extrakt 2</p>
-				  <span class="price"><a href="http://www.youtube.com/watch?v=SbUtBtzo9Qg" class="video-link" target="_blank">Ansehen</a></span>
-                </div>
-              </li>-->
+				<h2>Live Sessions</h2>
 			  <li>
                 <figure class="image"><a href="http://www.youtube.com/watch?v=aE78k1sTOSk" title="Farid Ben Miles - Tree Song" target="_blank"><img src="img/fbm-treesong.jpg" alt="Farid Ben Miles - Tree Song" class="imgdl"></a></figure>
                 <div class="text">
                   <h3><a href="http://www.youtube.com/watch?v=aE78k1sTOSk" class="video-link" target="_blank">"Tree Song" (Original)</a></h3>
-				  <br>
                   <p class="video_details">Live beim Palais Sommer Festival</p>
+				  <span class="separator"> </span>
                 </div>
               </li>
               <li>
                 <figure class="image"><a href="http://www.youtube.com/watch?v=Rv3SRhQrX5c" title="Farid Ben Miles - Tradivan" target="_blank"><img src="img/fbm-tradivan.jpg" alt="Farid Ben Miles - Tradivan" class="imgdl"></a></figure>
                 <div class="text">
                   <h3><a href="http://www.youtube.com/watch?v=Rv3SRhQrX5c" class="video-link" target="_blank">"Tradivan" (Caravan/Misirlou)</a></h3>
-                  <br>
-				  <p>Live in the Attic - Extrakt 1</p>
+				  <p class="video_details">Live in the Attic - Extrakt 1</p>
+				  <span class="separator"> </span>
                 </div>
               </li>
               <li>
                 <figure class="image"><a href="http://www.youtube.com/watch?v=SbUtBtzo9Qg" title="Farid Ben Miles - Going Overseas" target="_blank"><img src="img/fbm-goingoverseas.jpg" alt="Farid Ben Miles - Going Overseas" class="imgdl"></a></figure>
                 <div class="text">
                   <h3><a href="http://www.youtube.com/watch?v=SbUtBtzo9Qg" class="video-link" target="_blank">"Going Overseas" (Original)</a></h3>
-                  <br>
-				  <p>Live in the Attic - Extrakt 2</p>
+				  <p class="video_details">Live in the Attic - Extrakt 2</p>
+				  <span class="separator"> </span>
                 </div>
               </li>
             </ul>
@@ -214,29 +309,25 @@
           <div class="col-md-6">
             <ul class="menus">
 				<h2>One Shot Videos</h2>
-				*** Isou *** Display 2nd Option
               <li>
                 <figure class="image"><a href="http://www.youtube.com/watch?v=_30K8Bei_iI" title="Farid Ben Miles - Traditions" target="_blank"><img src="img/fbm-traditions.jpg" alt="Farid Ben Miles - Traditions" class="imgdl"></a></figure>
                 <div class="text">
-                  <h3>"Traditions"</h3>
+                  <h3><a href="http://www.youtube.com/watch?v=_30K8Bei_iI" class="video-link" target="_blank">"Traditions" (Original)</a></h3>
                   <p class="video_details">Erste Video von meiner erster CD "Going Overseas".</p>
-				  <span class="price"><a href="http://www.youtube.com/watch?v=_30K8Bei_iI" class="video-link" target="_blank">Ansehen</a></span>
                 </div>
               </li>
               <li>
                 <figure class="image"><a href="http://www.youtube.com/watch?v=xocDtcfhR6w" title="Farid Ben Miles - Ocean" target="_blank"><img src="img/fbm-ocean.jpg" alt="Farid Ben Miles - Ocean" class="imgdl"></a></figure>
                 <div class="text">
-                  <h3>One Shot Sessions #1</h3>
-                  <p>"Ocean" // Cover von John Butler.</p>
-				  <span class="price"><a href="http://www.youtube.com/watch?v=xocDtcfhR6w" class="video-link" target="_blank">Ansehen</a></span>
+                  <h3><a href="http://www.youtube.com/watch?v=xocDtcfhR6w" class="video-link" target="_blank">"Ocean"</a></h3>
+                  <p class="video_details">One Shot Sessions #1 - Cover von John Butler</p>
                 </div>
               </li>
               <li>
                 <figure class="image"><a href="http://www.youtube.com/watch?v=Npq5tuo5938" title="Farid Ben Miles - To Build a Home" target="_blank"><img src="img/fbm-tobuildahome.jpg" alt="Farid Ben Miles - To Build a Home" class="imgdl"></a></figure>
                 <div class="text">
-                  <h3>One Shot Sessions #3</h3>
-                  <p class="video_details">"To Build a Home" // Instrumental cover von The Cinematic Orchestra.</p>
-				  <span class="price"><a href="http://www.youtube.com/watch?v=Npq5tuo5938" class="video-link" target="_blank">Ansehen</a></span>
+                  <h3><a href="http://www.youtube.com/watch?v=Npq5tuo5938" class="video-link" target="_blank">"To Build a Home"</a></h3>
+                  <p class="video_details">One Shot Sessions #3 - Cover von The Cinematic Orchestra</p>
                 </div>
               </li>
             </ul>
@@ -250,18 +341,19 @@
         <div class="row">
           <div class="col-md-12 text-center probootstrap-animate">
             <div class="probootstrap-heading">
-              <h1 class="primary-heading">Meine Referenzen</h1>
-              <h3 class="secondary-heading">Lesen</h3>
+              <h1 class="primary-heading">Referenzen</h1>
+              <!--<h3 class="secondary-heading">Lesen</h3>-->
+			  <p class="sub-heading"><a href="#jetztlesen">Jetzt lesen.</a></p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="probootstrap-section">
+    <section class="probootstrap-section" id="jetztlesen">
       <div class="container">
 	  <div class="row">
           <div class="probootstrap-cell-retro">
-            <div class="">
+            <div class="ref">
 				<div class="col-md-4 col-sm-4 probootstrap-animate">
 						<div class="probootstrap-block-image">
 						  <figure><a href="http://www.kofferfabrik.cc/konzerte.html?TYP=DETAIL&VERANSTALTUNGID=47876&DATUM=2017-09-15" class="link-sm" title="Press // Kofferfabrik" target="_blank"><img src="img/press-kofferfabrik.jpg" alt="Press // Kofferfabrik" class="imgdl"></a></figure>
@@ -271,19 +363,19 @@
 							<p>"Mit seiner Musik hat er bereits die ganze Welt bereist um dann seine Reisen wiederum in packende Lieder zu verwandeln. 
 							Eigentlich möchte man bei seiner Musik nur die Augen schließen und sich wegtragen lassen in ferne Welten, 
 							aber wer das tut sieht dann leider eins nicht: Einen der besten fingerpickingstyle-Gitarristen der neuen Generation."</p>
-							<p class=""><a href="http://www.kofferfabrik.cc/konzerte.html?TYP=DETAIL&VERANSTALTUNGID=47876&DATUM=2017-09-15" class="probootstrap-custom-link link-sm" target="_blank">Weiter lesen</a></p>
+							<p class="sign_end"><a href="http://www.kofferfabrik.cc/konzerte.html?TYP=DETAIL&VERANSTALTUNGID=47876&DATUM=2017-09-15" class="probootstrap-custom-link link-sm" target="_blank">Weiter lesen</a></p>
 						  </div>
 						</div>
 					</div>
 				<div class="col-md-4 col-sm-4 probootstrap-animate">
 					<div class="probootstrap-block-image">
-					  <figure><img src="img/press-hochzeit_uf.jpg" alt="Press // Hochzeit Ulrike & Franz"></figure>
-					  <div class="text">
-						<span class="date">Juli 15, 2017</span>
-						<h3>Hochzeit Ulrike & Franz</h3>
-						<p>Blablabla. Sächsische Schweiz.</p>
-						<p class="signature">Ulrike & Franz</p>
-					  </div>
+						<figure><img src="img/press-hochzeit_uf.jpg" alt="Press // Hochzeit Ulrike & Franz"></figure>
+						<div class="text">
+							<span class="date">Juli 15, 2017</span>
+							<h3>Hochzeit Ulrike & Franz</h3>
+							<p>Blablabla. <br>Sächsische Schweiz. <br> Blablabla.</p>
+							<p class="sign_end"><span class="signature">Ulrike & Franz</span></p>
+						</div>
 					</div>
 				</div>
 					
@@ -296,14 +388,14 @@
 						<p>"Farid Ben Miles. Der aus Frankreich stammende Instrumental-Gitarrist hat die Welt bereist und zu einer ganz eigenen musikalischen
 						Sprache gefunden, die sich aus vielen Quellen speist; afrikanischen, europäischen, amerikanischen. Weltmusik im besten Sinne also, 
 						aber doch so markant und mitreißend, dass er zum Publikumsliebling avancierte."</p>
-						<p class=""><a href="http://www.dresdner.nu/reviews/Aus-persoenlicher-Sicht-Ein-Kommentar-zum-Finale-des-sound-of-dresden.58DFFC66.478F.html.php" class="probootstrap-custom-link link-sm" target="_blank">Weiter lesen</a></p>
+						<p class="sign_end"><a href="http://www.dresdner.nu/reviews/Aus-persoenlicher-Sicht-Ein-Kommentar-zum-Finale-des-sound-of-dresden.58DFFC66.478F.html.php" class="probootstrap-custom-link link-sm" target="_blank">Weiter lesen</a></p>
 					  </div>
 					</div>
 				</div>
 			  
 
             </div>
-            <div class="">
+            <div class="ref">
 				<div class="col-md-4 col-sm-4 probootstrap-animate">
 				<div class="probootstrap-block-image">
 				  <figure><a href="http://www.hey-dresden.de/freizeit/konzerte/farid-ben-miles-konzertreview/" class="link-sm" title="Press // Hey Dresden" target="_blank"><img src="img/press-heydresden.jpg" alt="Press // Hey Dresden" class="imgdl"></a></figure>
@@ -314,7 +406,7 @@
 					Farid Ben Miles entführte uns mit seinen fabelhaften Akustik-Kompositionen in eine Welt, wo wir träumend und friedlich 
 					unseren Gedanken freien Lauf ließen. Vom Orient bis nach Neuseeland, von Paris bis in die Elbflorenz, 
 					vom Takka-Tukka-Abenteuerland bis hin zur unendlichen Geschichte — dem Träumenden und der Fantasie waren keine Grenzen gesetzt.</p>
-					<p class=""><a href="http://www.hey-dresden.de/freizeit/konzerte/farid-ben-miles-konzertreview/" class="probootstrap-custom-link link-sm" target="_blank">Weiter lesen</a></p>
+					<p class="sign_end"><a href="http://www.hey-dresden.de/freizeit/konzerte/farid-ben-miles-konzertreview/" class="probootstrap-custom-link link-sm" target="_blank">Weiter lesen</a></p>
 				  </div>
 				</div>
 			  </div>
@@ -325,7 +417,7 @@
 					<span class="date">Dec 10, 2016</span>
 					<h3><a href="http://vimeo.com/226794784" class="link-sm" rel="noindex" target="_blank">WDR TV Promotion</a></h3>
 					<p>Essen's concert selected by WDR, German public TV channel.</p>
-					<p class=""><a href="http://vimeo.com/226794784" class="probootstrap-custom-link link-sm" rel="noindex" target="_blank">Ansehen</a></p>
+					<p class="sign_end"><a href="http://vimeo.com/226794784" class="probootstrap-custom-link link-sm" rel="noindex" target="_blank">Ansehen</a></p>
 				  </div>
 				</div>
 			  </div>
@@ -338,7 +430,7 @@
 						<h3>Hochzeit Sophie & Stevens</h3>
 						<p>"Farid hat unbedingt unsere Hochzeit einzigartig gemacht. Er hat eine wunderbare Version von unsere Lied gemacht 
 						und für die kirchlichetrauung gespielt. Es war einfach grandiös! Vielen Dank!</p>
-						<p class="signature">Sophie & Stevens</p>
+						<p class="sign_end"><span class="signature">Sophie & Stevens</span></p>
 					  </div>
 					</div>
 				</div>
@@ -349,36 +441,48 @@
     </section>
 
 
-	<section class="probootstrap-section-bg overlay" style="background-image: url(img/fbm-gigs.jpg);"  data-stellar-background-ratio="0.5" data-section="live">
+	<section class="probootstrap-section-bg overlay" style="background-image: url(img/fbm-gigs.jpg);"  data-stellar-background-ratio="0.5" data-section="musiker">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center probootstrap-animate">
             <div class="probootstrap-heading">
-              <h1 class="primary-heading">Meine Erfahrungen</h1>
-              <h3 class="secondary-heading">Entdecken</h3>
+              <h1 class="primary-heading">Das Bin Ich</h1>
+              <!--<h3 class="secondary-heading">Entdecken</h3>-->
+			  <p class="sub-heading"><a href="#mehrentdecken">Mehr entdecken.</a></p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="probootstrap-section probootstrap-bg-white">
+    <section class="probootstrap-section probootstrap-bg-white" id="mehrentdecken">
       <div class="container">
-        <div class="row">
+        <div class="row erfahrungrow">
           <div class="col-md-5 probootstrap-animate col-fbm col-sm-4">
             <div class="probootstrap-heading dark text-center">
-              <h2 class="primary-heading">Qualifikation</h2>
+              <h2 class="primary-heading">Das Bin Ich</h2>
               <h3 class="secondary-heading">Einblick</h3>
-            </div>
-            <p><h3>Professionalität</h3>
-			Mit mehr als 20 Jahren musikalischer Erfahrung, habe ich für viele verschiedene Veranstaltungen durchgeführt: 
-			von Festivals mit Tausenden von Menschen zu kleinen Geburtstagsfeiern.
-			<h3>Virtuosität</h3>
-			Auf meine Akustische Gitarre, spiele ich bekannte Melodien in Lounge, Kinematik und Fingerstyle-Versionen.
-			Es erklingen Melodien aus Filmmusik, Klassik und aktuell Hits in neuem Sound und entspannendem Gewand für stilvolle Gestaltung von Dinner-und Galaabenden, Eröffnungen, Bällen, Empfängen, Verleihungen, Soirées uvm.
-			</p>
-          </div>
-		  <div class="col-md-6 col-md-push-1 probootstrap-animate fadeInUp probootstrap-animated col-fbm col-sm-4">
-			<div class="socials">
+			</div>
+			<div>
+				<p>Geboren in Paris, wuchs ich zwischen zwei Kulturen auf — der französischen und arabischen
+					Kultur. Während ich klassische Musik in der Schule lernte, tanzte ich zu orientalischer Musik
+					zu Hause. Mit 6 Jahren entdeckte ich die Gitarre für mich und begann meine ersten Lieder zu
+					komponieren. Neben meinem Studium zum IT-Ingenieur, erlangte ich Abschlüsse in
+					klassischer und Gitarre sowie Jazz. Im Jahr 2013 bereiste ich für 3 Jahre die Welt. Seit dieser
+					Zeit lebe ich für die Musik und habe in ihr mein Zuhause gefunden. Mit Leidenschaft und Herz
+					erkunde ich jede Note auf meiner Gitarre und gebe mich meinen Kompositionen komplett
+					hin. Oder wie Platon bereits sagte: "Die Musik ist ein moralisches Gesetz. Sie schenkt unseren
+					Herzen eine Seele, verleiht den Gedanken Flügel, lässt die Phantasie erblühen.“
+				</p>
+				<!--<p><a href="http://www.hey-dresden.de/freizeit/konzerte/farid-ben-miles-konzertreview/" class="probootstrap-custom-link" target="_blank">Weiter Lesen (HeyDresden.de)</a></p>-->
+				<p class="btn-wrapper"><a href="#jetztbuchen" class="btn-contact" alt="Jetzt Anfragen">Jetzt Anfragen</a></p>
+			</div>
+		  </div>
+		  <div class="col-md-6 col-md-push-1 probootstrap-animate fadeInUp probootstrap-animated col-fbm col-sm-4 dasbinich">
+		  
+			<div><figure>
+				<img src="img/dasbinich.jpg" alt="Das Bin Ich // Sächsische Schweiz">
+			<figure></div>
+			<!--<div class="socials">
 				<h3>Vergangene Aufführungen</h3>
 				<div class="performances">
 					<p>Support - Paula i Karol Tour</p>
@@ -440,7 +544,7 @@
 						<li>Rennes // Samstag 12 September 2015</li>
 					</ul> 
 				</div>
-			</div>
+			</div>-->
           </div>
         </div>
       </div>
@@ -453,10 +557,10 @@
             <div class="probootstrap-footer-widget">
               <h3>Kontakt</h3>
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 kontakt_marg">
 					<p>Name<br><span class="contactdetails">Farid</span></p>
 					<p>Email Address<br><a href="mailto:musikunterhalter-fest@gmail.com" class="contactemail">musikunterhalter-fest@gmail.com</a></p>
-					<p><br><a href="mailto:faridbenmiles@gmail.com" class="btn-contact">Jetzt Buchen</a>  </p>
+					<p class="btn-wrapper"><a href="mailto:musikunterhalter-fest@gmail.com" class="btn-contact">E-Mail Senden</a></p>
                 </div>
 				<div class="col-md-6">
 					<p>Address<br><span class="contactdetails">Eisenberger Strasse 15</span></p>
@@ -498,9 +602,12 @@
         </div>
       </div>
     </section>
-
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/scripts.min.js"></script>
     <script src="js/custom.min.js"></script>
+	<script src="js/grt-youtube-popup.js"></script>
+	<script> $(".youtube-link").grtyoutube(); </script>
 
   </body>
 </html>
